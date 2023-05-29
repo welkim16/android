@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7C0DF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtheader"
+        android:text="LATEST JOBS"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp" />
+     <EditText
+        android:id="@+id/edittxt"
+        android:layout_width="265dp"
+        android:layout_height="55dp"
+        android:hint="search job by name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtheader"
+     />
+
+    <Button
+        android:id="@+id/searchbtn"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:text="Search Jobs"
+        android:layout_below="@id/edittxt"
+        android:layout_centerHorizontal="true"
+       />
+
+    <ListView
+        android:id="@+id/lstview"
+        android:layout_width="409dp"
+        android:layout_height="561dp"
+        android:layout_below="@id/searchbtn"/>
+
+</RelativeLayout>
